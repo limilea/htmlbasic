@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML BASIC</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    h5 {
-      color: pink;
-    }
-    #heading6 {
-      color: rgb(122, 94, 148);
-    }
-    .heading6 {
-      color: rgb(92, 168, 142);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style> 
+    .box {
+        border: 2px solid black;
+        width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+        background-color: rgb(164, 202, 228);
+    }
+</style>
+<div class="box"
 <body>
-  <h1 title="Heading 1" style="color: rgb(0, 0, 255);">Heading 1</h1>
-  <h2 style="color: rgb(255, 0, 0);">Heading 2</h2>
-  <h3 style="color: #ffeb09;">Heading 3</h3>
-  <h4 style="color: rgb(145, 145, 145);">Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6 id="heading6">Heading 6</h6>
-  <!--<h6 class="heading6">Heading 6</h6>-->
-  <a href="https://www.ubru.ac.th" target="_blank"> 
-    
-    <img src="images/home (1).png" alt="My House" width="64" height="64">
-  </a>
-  <img src="images/flower (1).png" alt="flower" width="64" height="64">
-  <img src="images/72470c19e1224156d8f9e86334fc98b7.jpg" alt="ff" width="200" height="400">----
-  <img title="BIG cat" src="https://i.pinimg.com/1200x/0e/4c/34/0e4c348312fd15d1b1baf85f22eeb752.jpg" alt="BIG cat" width="200" height="600">
+    <body style="background:#e0ebf1; padding:30px">
 
-  <p>Lorem <b>ipsum dolor</b> sit amet <mark>consectetur</mark> adipisicing elit. Deleniti labore nihil tenetur omnis ut? Fuga nisi aperiam quidem obcaecati officia ipsa sequi natus vel, rem illo enim, assumenda sapiente veritatis.</p>
-  <p><i><ins>Lorem ipsum</ins></i> dolor sit, amet consectetur adipisicing elit. Molestias id esse earum dolorem asperiores, architecto suscipit ex debitis expedita neque sunt illum velit facere fugiat quos cum ratione. Mollitia, aperiam?</p>
+    <h2 style="color:black;">แบบสอบถาม</h2>
+    <hr>
+
+    <form method="post" action="#">
+
+        <h3>ข้อมูลผู้ตอบแบบสอบถาม</h3>
+
+        <label>ชื่อ - นามสกุล:</label><br>
+        <input type="text" name="fullname" style="width:200px;"><br><br>
+
+        <label>รหัสนักศึกษา:</label><br>
+        <input type="text" name="student_id" style="width:200px;"><br><br>
+
+        <label>เพศ:</label><br>
+        <input type="radio" name="gender" value="ชาย"> ชาย
+        <input type="radio" name="gender" value="หญิง"> หญิง
+        <br><br>
+
+        <label>สังกัดคณะ</label><br>
+        <select name="faculty" size="7" multiple style="width:260px;">
+            <option value="คณะวิทยาการคอมพิวเตอร์">คระวิทยาการคอมพิวเตอร์</option>
+            <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+            <option value="คณะครุศาสตร์">คณะครุศาสตร์</option>
+            <option value="คณะมนุษยศาสตร์">คณะมนุษยศาสตร์</option>
+            <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+            <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+            <option value="คณะเกษตรศาสตร์">คณะเกษตรศาสตร์</option>
+            <option value="คณะสถาปัตยกรรมศาสตร์">คณะสถาปัตยกรรมศาสตร์</option>
+            <option value="คณะนิติศาตร์">คณะนิติศาตร์</option>
+        </select>
+        <br><br>
+
+        <label>สีที่ชอบ</label><br>
+        <input type="checkbox" name="color" value="แดง"> แดง
+        <input type="checkbox" name="color" value="น้ำเงิน"> น้ำเงิน
+        <input type="checkbox" name="color" value="เขียว"> เขียว
+        <br><br>
+
+        <label>ผลไม้ที่ชอบ</label><br>
+        <input type="checkbox" name="fruit" value="มะม่วง"> มะม่วง
+        <input type="checkbox" name="fruit" value="แตงโม"> แตงโม
+        <input type="checkbox" name="fruit" value="กล้วย"> กล้วย
+        <input type="checkbox" name="fruit" value="กล้วย"> ทุเรียน
+        <input type="checkbox" name="fruit" value="กล้วย"> ลำไย
+        <input type="checkbox" name="fruit" value="กล้วย"> มังคุด
+        <input type="checkbox" name="fruit" value="กล้วย"> แก้วมังกร
+        <br><br>
+
+        <button type="submit" style="padding:5px 15px;">บันทึก</button>
+
+    </form>
+
 </body>
+</body>
+</div>
 </html>
